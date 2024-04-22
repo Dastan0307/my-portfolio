@@ -3,6 +3,7 @@ import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/solid'
 import Link from 'next/link'
 import { useState } from 'react'
 import NavLink from './NavLink'
+import MenuOverlay from './MenuOverlay'
 
 const navLinks = [
 	{ title: 'About', path: '#about' },
@@ -14,7 +15,7 @@ const Navbar = () => {
 	const [navbarOpen, setNavbarOpen] = useState(false)
 
 	return (
-		<nav className='fixed top-0 left-0 right-0 z-10  bg-[#121212] bg-opacity-90'>
+		<nav className='fixed top-0 left-0 right-0 z-10  bg-[#121212] bg-opacity-100'>
 			<div className='flex flex-wrap items-center justify-between mx-auto px-4 py-2'>
 				<Link
 					href={'/'}
@@ -43,6 +44,7 @@ const Navbar = () => {
 					</ul>
 				</div>
 			</div>
+			{navbarOpen ? <MenuOverlay links={navLinks} /> : null}
 		</nav>
 	)
 }
