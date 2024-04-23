@@ -21,13 +21,13 @@ const HeroSection = () => {
 						<br></br>
 						<TypeAnimation
 							sequence={[
-								'Judy',
+								'Dastan',
 								1000,
-								'Web Developer',
+								'Fullstack Developer',
 								1000,
-								'Mobile Developer',
+								'Frontend Developer',
 								1000,
-								'UI/UX Designer',
+								'Backend Developer',
 								1000,
 							]}
 							wrapper='span'
@@ -60,16 +60,17 @@ const HeroSection = () => {
 					initial={{ opacity: 0, scale: 0.5 }}
 					animate={{ opacity: 1, scale: 1 }}
 					transition={{ duration: 0.5 }}
-					className='col-span-4 place-self-center mt-4 lg:mt-0'
+					className='col-span-4 place-self-center mt-4 lg:mt-5 mb-5'
 				>
-					<div className='rounded-full bg-[#181818] w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative'>
-						<Image
-							src='/images/hero-image.png'
-							alt='hero image'
-							className='absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2'
-							width={300}
-							height={300}
-						/>
+					{/* <div className='relative rounded-full bg-[#181818] w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] flex justify-center align-center'> */}
+					<div className='relative rounded-full w-300 h-300 lg:w-[400px] lg:h-[400px]'>
+							<Image
+								src='/images/my-foto3.png'
+								alt='Full stack developer | Frontend Developer'
+								className='absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 overflow-hidden rounded-tl-full rounded-tr-none rounded-br-full rounded-bl-full'
+								width={300}
+								height={300}
+							/>
 					</div>
 				</motion.div>
 			</div>
