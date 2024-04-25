@@ -66,9 +66,11 @@ const HeroSection = () => {
 						<Image
 							src='/images/my-foto3.png'
 							alt='Full stack developer | Frontend Developer'
+							style={{ width: 'auto', height: 'auto' }}
 							className='absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 overflow-hidden rounded-tl-full rounded-tr-none rounded-br-full rounded-bl-full'
 							width={300}
 							height={300}
+							priority={true}
 						/>
 					</div>
 				</motion.div>

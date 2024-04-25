@@ -1,8 +1,8 @@
 'use client'
 import Image from 'next/image'
+import Link from 'next/link'
 import { useState, useTransition } from 'react'
 import TabButton from './TabButton'
-import Link from 'next/link'
 
 const TAB_DATA = [
 	{
@@ -10,13 +10,16 @@ const TAB_DATA = [
 		id: 'skills',
 		content: (
 			<ul className='list-disc pl-2'>
-          <li>HTML5, CSS, Sass, Less, SCSS, Styled component, Tailwind, Ant Design, Material UI, Bootstrap</li>
-          <li>JavaScript, Typescript, Python, JQuery, ООP</li>
-          <li>React, Next, Node.js, Nest, Jest, Websocket</li>
-          <li>Redux, Redux Toolkit, RTK query, useContext, useReducer</li>
-          <li>Git, GitHub, GitLab</li>
-          <li>MongoDB, mongoose, Firebase, MySQL(basic level)</li>
-          <li>Slack, Discord, Jira, Trello, Scrum</li>
+				<li>
+					HTML5, CSS, Sass, Less, SCSS, Styled component, Tailwind, Ant Design,
+					Material UI, Bootstrap
+				</li>
+				<li>JavaScript, Typescript, Python, JQuery, ООP</li>
+				<li>React, Next, Node.js, Nest, Jest, Websocket</li>
+				<li>Redux, Redux Toolkit, RTK query, useContext, useReducer</li>
+				<li>Git, GitHub, GitLab</li>
+				<li>MongoDB, mongoose, Firebase, MySQL(basic level)</li>
+				<li>Slack, Discord, Jira, Trello, Scrum</li>
 			</ul>
 		),
 	},
@@ -26,7 +29,7 @@ const TAB_DATA = [
 		content: (
 			<ul className='list-disc pl-2'>
 				<li>Software for computing machinery and automated systems.</li>
-        <li>Osh State University, Osh Kyrgyzstan</li>
+				<li>Osh State University, Osh Kyrgyzstan</li>
 			</ul>
 		),
 	},
@@ -35,7 +38,15 @@ const TAB_DATA = [
 		id: 'experience',
 		content: (
 			<ul className='list-disc pl-2'>
-				<li>About my experience can look here: <Link href='https://docs.google.com/document/d/1DPD6DDEGBA1VjtFB5Xgw-LpBOFkFlx82G4woHS7QbRc/edit?usp=sharing' className='text-semibold underline text-blue-600'>My work experience </Link></li>
+				<li>
+					About my experience can look here:{' '}
+					<Link
+						href='https://docs.google.com/document/d/1DPD6DDEGBA1VjtFB5Xgw-LpBOFkFlx82G4woHS7QbRc/edit?usp=sharing'
+						className='text-semibold underline text-blue-600'
+					>
+						My work experience{' '}
+					</Link>
+				</li>
 			</ul>
 		),
 	},
@@ -54,7 +65,13 @@ const AboutSection = () => {
 	return (
 		<section className='text-white' id='about'>
 			<div className='md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16'>
-				<Image src='/images/my_foto.jpeg' width={500} height={500} />
+				<Image
+					src='/images/my_foto.jpeg'
+					alt='Fullstack developer | Frontend developer'
+					width={500}
+					height={500}
+					style={{ width: 'auto', height: 'auto' }}
+				/>
 				<div className='mt-4 md:mt-0 text-left flex flex-col h-full'>
 					<h2 className='text-4xl font-bold text-white mb-4'>About Me</h2>
 					<p className='text-base lg:text-lg'>
@@ -71,7 +88,7 @@ const AboutSection = () => {
 						knowledge with others and helping them grow in the web development
 						field. I am passionate about kickboxing, running, and computer
 						games. These hobbies help me maintain a work/leisure balance and
-						find inspiration for new projects. 
+						find inspiration for new projects.
 					</p>
 					<div className='flex flex-row justify-start mt-8'>
 						<TabButton
