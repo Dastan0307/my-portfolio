@@ -36,8 +36,8 @@ const HeroSection = () => {
 						/>
 					</h1>
 					<p className='text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl'>
-						Don't worry if something doesn't work. If everything was working,
-						you'd be fired...
+						Don&apos;t worry if something doesn&apos;t work. If everything was working,
+						you&apos;d be fired...
 					</p>
 					<div>
 						<Link
