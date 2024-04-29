@@ -1,0 +1,11 @@
+{
+  "Navbar" :{
+    "about": "About",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "HeroSection" :{
+    "hello": "Hello, I'm",
+    "podcast": "Don't worry if something doesn't work. If everything was working, you'd be fired..."
+  }
+}

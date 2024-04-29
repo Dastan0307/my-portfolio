@@ -2,8 +2,9 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { useState } from 'react'
-import GithubIcon from '../../../public/github-icon.svg'
-import LinkedinIcon from '../../../public/linkedin-icon.svg'
+// import GithubIcon from '../../../public/github-icon.svg'
+import LinkedinIcon from '../../../../public/linkedin-icon.svg'
+import GithubIcon from '../../../../public/github-icon.svg'
 
 const EmailSection = () => {
 	const [emailSubmitted, setEmailSubmitted] = useState(false)

@@ -1,3 +1,4 @@
+import LocalSwitcher from './LocalSwitcher'
 import NavLink from './NavLink'
 
 const MenuOverlay = ({ links }) => {
@@ -8,6 +9,7 @@ const MenuOverlay = ({ links }) => {
 					<NavLink href={link.path} title={link.title} />
 				</li>
 			))}
+			<LocalSwitcher />
 		</ul>
 	)
 }
