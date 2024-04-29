@@ -6,6 +6,55 @@
   },
   "HeroSection" :{
     "hello": "Hello, I'm",
-    "podcast": "Don't worry if something doesn't work. If everything was working, you'd be fired..."
-  }
+    "podcast": "Don't worry if something doesn't work. If everything was working, you'd be fired...",
+    "name": "Dastan",
+    "dev": "Developer",
+    "hire": "Hire Me",
+    "download": "Download CV"
+  },
+  "AchievementsList": {
+    "projects": "Projects",
+    "users": "Users",
+    "awards": "Awards",
+    "years": "Years"
+  },
+  "AboutSection": {
+    "about": "About",
+    "descriptions": "I'm a Fullstack developer with over +1.5 years of experience. My professional journey started with a wide range of responsibilities, but over time I started to delve deeper into Frontend development. I'm attracted by the ability to create impressive user interfaces and improve user experience. I strive for self-development and am always ready to take on the challenge of complex tasks. My ability to learn quickly and make independent decisions helps me to solve any task effectively. I'm a team player and love working in a team where everyone contributes and we build awesome applications together. I'm also experienced in mentoring and code review. I love sharing my knowledge with others and helping them grow in the web development field. I'm passionate about kickboxing, running, and computer games. These hobbies help me maintain a work/leisure balance and find inspiration for new projects.",
+    "skills": "Skills",
+    "education": "Education",
+    "experience": "Experience",
+    "university": "Osh State University, Osh Kyrgyzstan",
+    "software": "Software for computing machinery and automated systems.",
+    "here": "About my experience can look here",
+    "cv": "My work experience"
+  },
+  "ProjectsSection": {
+    "my-projects": "My Projects",
+    "all": "All",
+    "web": "Web",
+    "mobile": "Mobile",
+    "crypto": "Crypto",
+    "cryptoDescription": "Project Crypto is a web application for tracking cryptocurrency prices with charts and the ability to add.",
+    "zooShop": "Zoo shop",
+    "zooShopDescription": "Zoo Shop is an online pet store. We have a wide range of grooming products, toys and food for your pets. The user-friendly interface makes it easy to select and order the products you need to take care of your pet.",
+    "mobimarket": "Mobi Market",
+    "mobimarketDescription": "Mobile market clone with admin panel",
+    "foodOrdering": "Food Ordering Application",
+    "foodOrderingDescription": "Project 4 description",
+    "neocafeBarista": "Neocafe Barista",
+    "neocafeBaristaDescription": "It is an app for baristas in a coffee establishment . Warning: If you are not registered, you can not get in.",
+    "onlineSportsStore": "Online sports store",
+    "onlineSportsStoreDescription": "Online Sportsmagazine is an online platform for buying sports equipment and footwear."
+  },
+  "EmailSection": {
+		"connect": "Let's Connect",
+		"connectsDescription": "I'm currently looking for new opportunities, my inbox is always open. Whether you have a question or just want to say hi, I'll try my best to get back to you!",
+    "sent": "Email sent successfully!",
+		"warning": "These fields don't work yet, in development!",
+		"email": "Your email",
+		"subject": "Subject",
+		"message": "Message",
+		"send": "Send Message"
+	}
 }

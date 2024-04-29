@@ -17,15 +17,15 @@ const LocalSwitcher = () => {
 	}
 
 	return (
-		<label className='border-2 rounded'>
+		<label className='rounded border-none focus:outline-none focus:border-transparent'>
 			<select
 				defaultValue={localActive}
-				className='bg-transparent py-2'
+				className='bg-transparent py-1'
 				onChange={onSelectChange}
 				disabled={isPending}
 			>
-				<option value='en'>English</option>
-				<option value='id'>Русский</option>
+				<option value='en' className='text-black'>English</option>
+				<option value='id' className='text-black'>Русский</option>
 			</select>
 		</label>
 	)

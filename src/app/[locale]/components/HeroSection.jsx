@@ -4,7 +4,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { TypeAnimation } from 'react-type-animation'
 
-const HeroSection = () => {
+const HeroSection = ({ heroSection }) => {
 	return (
 		<section className='lg:py-16'>
 			<div className='grid grid-cols-1 sm:grid-cols-12'>
@@ -15,17 +15,19 @@ const HeroSection = () => {
 					className='col-span-8 place-self-center text-center sm:text-left justify-self-start'
 				>
 					<h1 className='text-white mb-4 text-4xl sm:text-5xl lg:text-8xl lg:leading-normal font-extrabold'>
-						<span className='text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-secondary-600'></span>
+						<span className='text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-secondary-600'>
+							{heroSection[0]}
+						</span>
 						<br></br>
 						<TypeAnimation
 							sequence={[
-								'Dastan',
+								heroSection[2],
 								1000,
-								'Fullstack Developer',
+								`Fullstack ${heroSection[3]}`,
 								1000,
-								'Frontend Developer',
+								`Frontend ${heroSection[3]}`,
 								1000,
-								'Backend Developer',
+								`Backend ${heroSection[3]}`,
 								1000,
 							]}
 							wrapper='span'
@@ -34,22 +36,23 @@ const HeroSection = () => {
 						/>
 					</h1>
 					<p className='text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl'>
-						Don&#39;t worry if something doesn&#39;t work. If everything was
-						working, you&#39;d be fired...
+						{/* Don&#39;t worry if something doesn&#39;t work. If everything was
+						working, you&#39;d be fired... */}
+						{heroSection[1]}
 					</p>
 					<div>
 						<Link
 							href='/#contact'
 							className='px-6 inline-block py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-primary-500 to-secondary-500 hover:bg-slate-200 text-white'
 						>
-							Hire Me
+							{heroSection[4]}
 						</Link>
 						<Link
 							href='https://docs.google.com/document/d/1DPD6DDEGBA1VjtFB5Xgw-LpBOFkFlx82G4woHS7QbRc/edit?usp=sharing'
 							className='px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-primary-500 to-secondary-500 hover:bg-slate-800 text-white mt-3'
 						>
 							<span className='block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2'>
-								Download CV
+								{heroSection[5]}
 							</span>
 						</Link>
 					</div>

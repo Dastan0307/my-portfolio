@@ -3,10 +3,10 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { useState } from 'react'
 // import GithubIcon from '../../../public/github-icon.svg'
-import LinkedinIcon from '../../../../public/linkedin-icon.svg'
 import GithubIcon from '../../../../public/github-icon.svg'
+import LinkedinIcon from '../../../../public/linkedin-icon.svg'
 
-const EmailSection = () => {
+const EmailSection = ({ emailSection }) => {
 	const [emailSubmitted, setEmailSubmitted] = useState(false)
 
 	const handleSubmit = async e => {
@@ -50,13 +50,11 @@ const EmailSection = () => {
 			<div className='bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-blue-900 to-transparent rounded-full h-80 w-80 z-0 blur-lg absolute top-3/4 -left-4 transform -translate-x-1/2 -translate-1/2'></div>
 			<div className='z-10'>
 				<h5 className='text-xl font-bold text-white my-2'>
-					Let&apos;s Connect
+					{emailSection[0]}
 				</h5>
 				<p className='text-[#ADB7BE] mb-4 max-w-md'>
 					{' '}
-					I&apos;m currently looking for new opportunities, my inbox is always
-					open. Whether you have a question or just want to say hi, I&apos;ll
-					try my best to get back to you!
+					{emailSection[1]}
 				</p>
 				<div className='socials flex flex-row gap-2'>
 					<Link href='https://github.com/Dastan0307'>
@@ -70,7 +68,7 @@ const EmailSection = () => {
 			<div>
 				{emailSubmitted ? (
 					<p className='text-green-500 text-sm mt-2'>
-						Email sent successfully!
+						{emailSection[2]}
 					</p>
 				) : (
 					<form className='flex flex-col' onSubmit={handleSubmit}>
@@ -79,8 +77,10 @@ const EmailSection = () => {
 								htmlFor='email'
 								className='text-white block mb-2 text-sm font-medium'
 							>
-								<p className='text-red-400 mb-1'>These fields don&apos;t work yet, in development!</p>
-								Your email
+								<p className='text-red-400 mb-1'>
+								{emailSection[3]}
+								</p>
+								{emailSection[4]}
 							</label>
 							<input
 								name='email'
@@ -96,7 +96,7 @@ const EmailSection = () => {
 								htmlFor='subject'
 								className='text-white block text-sm mb-2 font-medium'
 							>
-								Subject
+								{emailSection[5]}
 							</label>
 							<input
 								name='subject'
@@ -112,7 +112,7 @@ const EmailSection = () => {
 								htmlFor='message'
 								className='text-white block text-sm mb-2 font-medium'
 							>
-								Message
+								{emailSection[6]}
 							</label>
 							<textarea
 								name='message'
@@ -126,7 +126,7 @@ const EmailSection = () => {
 							type='submit'
 							className='bg-blue-700 hover:bg-blue-600 text-white font-medium py-2.5 px-5 rounded-lg w-full'
 						>
-							Send Message
+							{emailSection[7]}
 						</button>
 					</form>
 				)}
