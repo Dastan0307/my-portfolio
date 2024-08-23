@@ -98,7 +98,7 @@ export default function Home() {
 					<li>
 						{about('here')}:{' '}
 						<Link
-							href='https://docs.google.com/document/d/1DPD6DDEGBA1VjtFB5Xgw-LpBOFkFlx82G4woHS7QbRc/edit?usp=sharing'
+							href='https://docs.google.com/document/d/1r5hJuImuLxpMdWgVZT2S53ILMmIUxcR5xubW90ja31c/edit?usp=sharing'
 							className='text-semibold underline text-blue-600'
 						>
 							{about('cv')}
@@ -114,7 +114,7 @@ export default function Home() {
 		about('descriptions'),
 		about('skills'),
 		about('education'),
-		about('experience')
+		about('experience'),
 	]
 
 	const projectsData = [
@@ -161,7 +161,8 @@ export default function Home() {
 			image: '/images/projects/project5.png',
 			tag: [project('all'), project('web')],
 			gitUrl: 'https://github.com/Dastan0307/neocafe',
-			previewUrl: 'https://neocafe-no73n2l5l-dastan0307s-projects.vercel.app/login',
+			previewUrl:
+				'https://neocafe-no73n2l5l-dastan0307s-projects.vercel.app/login',
 		},
 		{
 			id: 6,
@@ -174,9 +175,23 @@ export default function Home() {
 		},
 	]
 
-	const projects = [project('my-projects'), project('all'), project('web'), project('mobile')]
+	const projects = [
+		project('my-projects'),
+		project('all'),
+		project('web'),
+		project('mobile'),
+	]
 
-	const emailSection = [e('connect'), e('connectDescription'), e('sent'), e('warning'), e('email'), e('subject'), e('message'), e('send')]
+	const emailSection = [
+		e('connect'),
+		e('connectDescription'),
+		e('sent'),
+		e('warning'),
+		e('email'),
+		e('subject'),
+		e('message'),
+		e('send'),
+	]
 
 	return (
 		<main className='flex min-h-screen flex-col bg-[#121212]'>

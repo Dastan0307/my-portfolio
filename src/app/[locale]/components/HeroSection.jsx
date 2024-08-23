@@ -36,8 +36,6 @@ const HeroSection = ({ heroSection }) => {
 						/>
 					</h1>
 					<p className='text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl'>
-						{/* Don&#39;t worry if something doesn&#39;t work. If everything was
-						working, you&#39;d be fired... */}
 						{heroSection[1]}
 					</p>
 					<div>
@@ -48,7 +46,7 @@ const HeroSection = ({ heroSection }) => {
 							{heroSection[4]}
 						</Link>
 						<Link
-							href='https://docs.google.com/document/d/1DPD6DDEGBA1VjtFB5Xgw-LpBOFkFlx82G4woHS7QbRc/edit?usp=sharing'
+							href='https://docs.google.com/document/d/1r5hJuImuLxpMdWgVZT2S53ILMmIUxcR5xubW90ja31c/edit?usp=sharing'
 							className='px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-primary-500 to-secondary-500 hover:bg-slate-800 text-white mt-3'
 						>
 							<span className='block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2'>
